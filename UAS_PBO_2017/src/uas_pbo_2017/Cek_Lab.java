@@ -9,14 +9,7 @@ package uas_pbo_2017;
  *
  * @author arkhamzahrirakhman
  */
-public class UAS_PBO_2017 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic heres
-        System.out.println("");
-    }
-    
+public abstract class Cek_Lab {
+    String satuan;
+    public abstract double hitungTagihan();
 }
