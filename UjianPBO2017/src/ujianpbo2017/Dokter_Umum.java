@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package uas_pbo_2017;
+package ujianpbo2017;
 
 /**
  *
  * @author arkhamzahrirakhman
  */
-public abstract class Fasilitas {
-    String satuan;
-    public abstract double hitungTagihan();
+public class Dokter_Umum {
+    
 }
