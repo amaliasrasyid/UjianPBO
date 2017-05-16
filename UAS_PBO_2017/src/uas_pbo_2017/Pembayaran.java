@@ -14,10 +14,10 @@ import java.util.ArrayList;
 public class Pembayaran {
     Pasien pasien;
 
-    //private ArrayList<Fasilitas> alFasilitas = new ArrayList<Fasilitas>();
+    private ArrayList<Fasilitas> alFasilitas = new ArrayList<Fasilitas>();
 
 
-    public void addCekLab(Cek_Lab cl) {
+    public void addFasilitas(Fasilitas f) {
     }
 
     public double hitungSemuaTagihan() {
@@ -32,11 +32,10 @@ public class Pembayaran {
         Pasien pasien = new Pasien(1,"Rudi");
         Pembayaran  pembayaran = new Pembayaran(pasien);
         Ruang_Rawat_Inap rri = new Ruang_Rawat_Inap(231,200);
-        //FasilitasKamar fk = new FasilitasKamar(k);
-        //fk.kamar = k;
-        //fk.jumHari = 3; //menginap 3 hari
-        //tagihan.addFasilitas(fk);
-        //lengkapi fasilitas lainnya
-        //System.out.println("Tagihan:"+tagihan.hitungSemuaTagihan());
+        FasilitasRuangan fr = new FasilitasRuangan(rri);
+        fr.kamar = rri;
+        fr.jumHari = 3;
+        pembayaran.addFasilitas(fr);
+        System.out.println("Tagihan:"+pembayaran.hitungSemuaTagihan());
     }
 }

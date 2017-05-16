@@ -9,7 +9,6 @@ package uas_pbo_2017;
  *
  * @author arkhamzahrirakhman
  */
-public abstract class Cek_Lab {
-    String satuan;
-    public abstract double hitungTagihan();
+public class Dokter_Spesialis {
+    
 }

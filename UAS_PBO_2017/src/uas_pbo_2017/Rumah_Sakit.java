@@ -9,14 +9,14 @@ package uas_pbo_2017;
  *
  * @author arkhamzahrirakhman
  */
-public class UAS_PBO_2017 {
+public class Rumah_Sakit {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic heres
-        System.out.println("");
+        
     }
     
 }
