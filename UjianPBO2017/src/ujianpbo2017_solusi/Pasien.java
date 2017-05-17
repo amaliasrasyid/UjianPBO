@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ujianpbo2017;
+package ujianpbo2017_solusi;
 
 /**
  *
@@ -15,10 +15,13 @@ public class Pasien {
 
     //lengkapi
     public Pasien(int id, String nama_pasien) {
+        this.id = id;
+        this.nama_pasien = nama_pasien;
     }
 
     //lengkapi
     public void print() {
+        System.out.println("id pasien:"+this.id+", nama pasien:"+this.nama_pasien+"");
     }
 
     public static void main(String[] args) {

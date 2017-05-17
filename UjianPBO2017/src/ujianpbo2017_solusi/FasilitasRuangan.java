@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ujianpbo2017;
+package ujianpbo2017_solusi;
 
 /** 
  *
@@ -15,17 +15,19 @@ public class FasilitasRuangan extends Fasilitas{
  
     //lengkapi
     public FasilitasRuangan(Ruang_Rawat_Inap k) {
+        this.kamar = k;
+        String satuan = "hari";
     }
     
     //lengkapi
     @Override
     public double hitungTagihan() {
-        // tagihan adalah jumalh hari * harga per kamar
-        return 0;
+        return  kamar.harga * jumHari;
     }
     
     // lengkapi
     public void print() {
+        System.out.println("jumlah hari :"+this.jumHari+"");
     }
     
     public static void main(String[] args) {

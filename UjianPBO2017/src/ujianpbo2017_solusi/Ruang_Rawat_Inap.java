@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ujianpbo2017;
+package ujianpbo2017_solusi;
 
 /**
  *
@@ -12,13 +12,17 @@ package ujianpbo2017;
 public class Ruang_Rawat_Inap {
     int id;
     int harga; //harga kamar permalam dalam ribu. Jadi kalau 400 artinya Rp400000
+    boolean isKosong=true;   //apakah kamar ditempati
 
     //lengkapi
     public Ruang_Rawat_Inap(int id, int harga) {
+        this.id = id;
+        this.harga = harga;
     }
 
     //lengkapi
     public void print() {
+        System.out.println("Ruangan - id ruangan : "+this.id+", harga : "+this.harga+"");
     }
 
     public static void main(String[] args) {

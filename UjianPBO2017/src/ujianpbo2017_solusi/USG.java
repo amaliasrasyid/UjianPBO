@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ujianpbo2017;
+package ujianpbo2017_solusi;
 
 /**
  *
@@ -22,11 +22,12 @@ public class USG extends Fasilitas {
     //lengkapi
     @Override
     public double hitungTagihan() {
-        return 0;
+        return  this.harga*this.jumPemeriksaan;
     }
     
     //lengkapi
     public void print() {
+        System.out.println("Pemeriksaan USG - Jumlah : "+this.jumPemeriksaan+" kali , harga : "+this.harga+"");
     }
     
     public static void main(String[] args) {

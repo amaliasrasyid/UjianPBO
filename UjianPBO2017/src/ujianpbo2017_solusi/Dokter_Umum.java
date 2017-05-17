@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ujianpbo2017;
+package ujianpbo2017_solusi;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,21 +25,25 @@ public class Dokter_Umum  extends Dokter{
     
     List<String> Identitas = new ArrayList<>();
     public Map<Integer, List> allIdentitas = new HashMap<>();
-    
-    //lengkapi
+       
     public Dokter_Umum(int id, String name, String w){
+        this.id = id;
+        this.name = name;
+        this.tanggal_waktu = w;
     }
     
     @Override
     public Map getIdentitas() {
-        // mendapatkan identias dokter yang terdiri dari id, nama dan waktu pemeriksaan
-        return null;
+        // mendapatkan identias dokter yang terdiri dari id, nama dan spesialis
+        Identitas.add(this.name);
+        Identitas.add(this.tanggal_waktu);
+        return (Map) allIdentitas.put(id, Identitas);
     }
 
     @Override
     public String getWaktuPraktek() {
-        // mendapatkan waktu pemeriksaan
-        return null;
+        // mendapatkan waktu praktik dokter
+        return this.tanggal_waktu;
     }
 
     @Override

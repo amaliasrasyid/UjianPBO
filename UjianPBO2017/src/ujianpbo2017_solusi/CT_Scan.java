@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ujianpbo2017;
+package ujianpbo2017_solusi;
 
 /**
  *
@@ -24,7 +24,7 @@ public class CT_Scan extends Fasilitas  {
     @Override
     public double hitungTagihan() {
         // tagihan pemeriksaan ct_scan
-        return 0;
+        return  (harga * jumPemeriksaan) + (this.asuransi * jumPemeriksaan);
     }
     
     //overloading
@@ -32,22 +32,25 @@ public class CT_Scan extends Fasilitas  {
     public static double hitungTagihan(int asuransi) {
         // tagihan pemeriksaan ct_scan
         // asuransi: harga asuransi setiap pemeriksaan
-        return 0;
+        return (harga * jumPemeriksaan) + (asuransi * jumPemeriksaan);
     }
     
     //lengkapi
     public void print() {
+        System.out.println("Pemeriksaan CT Scan - Jumlah : "+ this.jumPemeriksaan+" kali , asuransi : "+ this.asuransi+", harga : "+ this.harga+"");
     }
     
     //lengkapi
     public static void print(int asuransi) {
+        System.out.println("Pemeriksaan CT Scan - Jumlah : "+ jumPemeriksaan+" kali , asuransi : "+ asuransi+", harga : "+ harga+"");
     }
 
     public static void main(String[] args) {
         //lengkapi 
         //main class dengan menggunakan karakteristik class dan fungsi static
-        // -jumlah pemeriksaan = 3
-        // -asuransi = 3000
+        CT_Scan.jumPemeriksaan = 3; //pemeriksaan 3 kali
+        CT_Scan.print(3000);
+        System.out.println("Tagihan CT Scan:"+CT_Scan.hitungTagihan(3000)); 
     }
     
     

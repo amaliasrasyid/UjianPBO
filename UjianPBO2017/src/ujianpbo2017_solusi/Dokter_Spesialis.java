@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ujianpbo2017;
+package ujianpbo2017_solusi;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -12,6 +12,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -23,35 +25,39 @@ public class Dokter_Spesialis extends Dokter{
     public int id;
     public String name;
     public String spesialis;
-    public String tanggal_waktu; // waktu pemeriksaan
+    public String tanggal_waktu;
     public String awal;
     public String akhir;
     
     List<String> Identitas = new ArrayList<>();
     public Map<Integer, List> allIdentitas = new HashMap<>();
-    
-    //lengkapi
+       
     public Dokter_Spesialis(int id, String name, String sps, String w){
+        this.id = id;
+        this.name = name;
+        this.spesialis = sps; 
+        this.tanggal_waktu = w;
     }
     
-    //lengkapi
     @Override
     public Map getIdentitas() {
-        // mendapatkan identias dokter yang terdiri dari id, nama, spesialis dan waktu pemeriksaan
-        return null;
+        // mendapatkan identias dokter yang terdiri dari id, nama dan spesialis
+        Identitas.add(this.name);
+        Identitas.add(this.spesialis);
+        Identitas.add(this.tanggal_waktu);
+        return (Map) allIdentitas.put(id, Identitas);
     }
-    
-    //lengkapi
+
     @Override
     public String getWaktuPraktek() {
-        // mendapatkan waktu pemeriksaan
-        return null;
+        // mendapatkan waktu praktik dokter
+        return this.tanggal_waktu;
     }
 
     @Override
     public double HitungHarga() {
         //menghitung harga pembayaran untuk dokter dengan rumus : Harga per menit * jumlah menit
-        return 0;
+        return this.harga * HitungMenit();
     }
     
     public long HitungMenit() {
@@ -67,8 +73,8 @@ public class Dokter_Spesialis extends Dokter{
         return 0;
     }
     
-    //lengkapi
     public void print() {
+        System.out.println("id dokter : "+this.id+", nama : "+this.name+", waktu : "+ this.tanggal_waktu+", spesialis : "+ this.spesialis+"");
     }
     
     
