@@ -20,6 +20,8 @@ public class Dokter_Umum  extends Dokter{
     public int id;
     public String name;
     public String tanggal_waktu;
+    public String awal;
+    public String akhir;
     
     List<String> Identitas = new ArrayList<>();
     public Map<Integer, List> allIdentitas = new HashMap<>();
@@ -45,7 +47,7 @@ public class Dokter_Umum  extends Dokter{
     }
 
     @Override
-    public double getHarga(String awal, String akhir) {
+    public double HitungHarga() {
         // mendapatkan selisih menit dikali harga
         return 0;
     }

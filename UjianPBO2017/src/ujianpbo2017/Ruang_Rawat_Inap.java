@@ -22,7 +22,7 @@ public class Ruang_Rawat_Inap {
 
     //lengkapi
     public void print() {
-        System.out.println("id ruangan:"+this.id+" harga:"+this.harga+"");
+        System.out.println("Ruangan - id ruangan : "+this.id+", harga : "+this.harga+"");
     }
 
     public static void main(String[] args) {

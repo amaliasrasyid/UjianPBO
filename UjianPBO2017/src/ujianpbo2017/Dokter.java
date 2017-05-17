@@ -13,6 +13,6 @@ public abstract class Dokter {
     
     public abstract Map getIdentitas();
     public abstract String getWaktuPraktek();
-    public abstract double getHarga(String awal, String akhir);
+    public abstract double HitungHarga();
     
 }

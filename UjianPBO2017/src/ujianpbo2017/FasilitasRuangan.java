@@ -13,16 +13,23 @@ public class FasilitasRuangan extends Fasilitas{
     Ruang_Rawat_Inap kamar;
     int jumHari;
  
+    //lengkapi
     public FasilitasRuangan(Ruang_Rawat_Inap k) {
         this.kamar = k;
         String satuan = "hari";
     }
-
+    
+    //lengkapi
     @Override
     public double hitungTagihan() {
         return  kamar.harga * jumHari;
     }
-
+    
+    // lengkapi
+    public void print() {
+        System.out.println("jumlah hari :"+this.jumHari+"");
+    }
+    
     public static void main(String[] args) {
         Ruang_Rawat_Inap k = new Ruang_Rawat_Inap(231,200);
         FasilitasRuangan fr = new FasilitasRuangan(k);
