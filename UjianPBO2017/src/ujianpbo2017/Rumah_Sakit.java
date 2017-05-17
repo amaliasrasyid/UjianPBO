@@ -7,7 +7,7 @@ package ujianpbo2017;
 
 /**
  *
- * @author arkhamzahrirakhman
+ * @author ahmadluky
  */
 public class Rumah_Sakit {
 

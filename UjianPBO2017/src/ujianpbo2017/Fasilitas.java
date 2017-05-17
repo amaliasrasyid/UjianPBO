@@ -1,13 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Fasilitas Terdiri dari: USG, Ruang Rawat Inap, Cek Darah, CT Scan
  */
 package ujianpbo2017;
 
 /**
  *
- * @author arkhamzahrirakhman
+ * @author ahmadluky
  */
 public abstract class Fasilitas {
     String satuan;

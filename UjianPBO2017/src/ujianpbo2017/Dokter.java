@@ -1,14 +1,18 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Dokter Terdiri dari: Dokter Umum, dan Dokter Spesialis
  */
 package ujianpbo2017;
 
+import java.util.Map;
+
 /**
  *
- * @author arkhamzahrirakhman
+ * @author ahmadluky
  */
-public class Dokter {
+public abstract class Dokter {
+    
+    public abstract Map getIdentitas();
+    public abstract String getWaktuPraktek();
+    public abstract double getHarga(String awal, String akhir);
     
 }

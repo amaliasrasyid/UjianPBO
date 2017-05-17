@@ -7,7 +7,7 @@ package ujianpbo2017;
 
 /**
  *
- * @author arkhamzahrirakhman
+ * @author ahmadluky
  */
 public class Ruang_Rawat_Inap {
     int id;
@@ -15,12 +15,14 @@ public class Ruang_Rawat_Inap {
     boolean isKosong=true;   //apakah kamar ditempati
 
     //lengkapi
-    //constructor
     public Ruang_Rawat_Inap(int id, int harga) {
+        this.id = id;
+        this.harga = harga;
     }
 
     //lengkapi
     public void print() {
+        System.out.println("id ruangan:"+this.id+" harga:"+this.harga+"");
     }
 
     public static void main(String[] args) {
@@ -28,3 +30,6 @@ public class Ruang_Rawat_Inap {
         rri.print();
     }
 }
+
+//output:
+//id ruangan:231 harga:200

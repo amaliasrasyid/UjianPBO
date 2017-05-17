@@ -7,24 +7,28 @@ package ujianpbo2017;
 
 /**
  *
- * @author arkhamzahrirakhman
+ * @author ahmadluky
  */
 public class Pasien {
     int id;
-      String nama_pasien;
+    String nama_pasien;
 
-      //lengkapi
-      //constructor
-      public Pasien(int id, String nama_pasien) {
-      }
+    //lengkapi
+    public Pasien(int id, String nama_pasien) {
+        this.id = id;
+        this.nama_pasien = nama_pasien;
+    }
 
-      //lengkapi
-      public void print() {
-      }
+    //lengkapi
+    public void print() {
+        System.out.println("id pasien:"+this.id+", nama pasien:"+this.nama_pasien+"");
+    }
 
-      //jangan edit
-      public static void main(String[] args) {
-          Pasien t = new Pasien(1,"Rudi");
-          t.print();
-      }
+    public static void main(String[] args) {
+        Pasien t = new Pasien(1,"Rudi");
+        t.print();
+    }
 }
+
+//output
+//id pasien:1, nama pasien:Rudi

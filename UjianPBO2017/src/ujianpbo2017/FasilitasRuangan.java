@@ -5,14 +5,14 @@
  */
 package ujianpbo2017;
 
-/**
+/** 
  *
- * @author arkhamzahrirakhman
+ * @author ahmadluky
  */
 public class FasilitasRuangan extends Fasilitas{
     Ruang_Rawat_Inap kamar;
     int jumHari;
-
+ 
     public FasilitasRuangan(Ruang_Rawat_Inap k) {
         this.kamar = k;
         String satuan = "hari";
@@ -27,6 +27,9 @@ public class FasilitasRuangan extends Fasilitas{
         Ruang_Rawat_Inap k = new Ruang_Rawat_Inap(231,200);
         FasilitasRuangan fr = new FasilitasRuangan(k);
         fr.jumHari = 3; //obname 3 hari
-        System.out.println("Tagihan:"+fr.hitungTagihan()); 
+        System.out.println("Tagihan Ruangan:"+fr.hitungTagihan()); 
     }
 }
+
+//output:
+//Tagihan Ruangan:600.0

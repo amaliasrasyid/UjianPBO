@@ -7,7 +7,7 @@ package ujianpbo2017;
 
 /**
  *
- * @author arkhamzahrirakhman
+ * @author ahmadluky
  */
 public class UjianPBO2017 {
 
