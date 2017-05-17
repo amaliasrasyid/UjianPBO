@@ -5,7 +5,11 @@
     date        : 15 mei 2017
     =======================
 
-    
+    1. Lakukan pemeriksaan dan lengkapi class Fasilitas. Lakukan juga pada
+       setiap kelas implementasinya
+    2. Lakukan pemeriksaan dan lengkapi class Dokter. Lakukan juga pada
+       setiap kelas implementasinya
+    3. Lakukan pemeriksaan dan lengkapi class Pembayaran.
 
 **/
 
